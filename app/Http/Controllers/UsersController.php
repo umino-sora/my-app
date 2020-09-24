@@ -8,6 +8,7 @@ class UsersController extends Controller
 {
     public function index()
     {
-        return view('mypage.blade.php');
+        // 「users/mypage.blade.php」を表示
+        return view('users/mypage');
     }
 }
