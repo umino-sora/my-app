@@ -1,5 +1,5 @@
 .navbar {
-    background-color: rgba(185, 208, 177, 0.5);
+    background-color: #b9d0b1;
     height: 60px;
     &__brand {
         height: 65px;
@@ -9,6 +9,7 @@
     &__mainLogo {
         background-repeat: no-repeat;
         align-items: center;
+        background-size: 125px;
         background-image: url("/images/logo.png");
     }
     &-nav {
@@ -17,14 +18,12 @@
             &:first-child {
                 margin-left: 0;
             }
-            .commonNavIcon {
-                height: 24px;
-                width: 24px;
-                background-size: 22px !important;
-                background-repeat: no-repeat;
-            }
-            .profile-icon {
-                background-image: url("/images/photo_logo.png");
+            .btn-primary {
+                background-color: #fff;
+                color: #b9d0b1;
+                border-radius: 25px;
+                border-color: #fff;
+                font-size: 14px;
             }
         }
     }
