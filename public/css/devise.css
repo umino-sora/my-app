@@ -2,7 +2,7 @@
   max-width: 960px;
   margin: 0 auto;
   width: 90%;
-  padding: 100px 75px 100px;
+  padding: 30px 75px 30px;
   display: block;
   flex: 1;
   flex-basis: auto;
@@ -16,21 +16,34 @@
   width: 100%;
   margin: 50px auto;
 }
-.logo-img {
-  background-image: url("/images/logo.png");
-  background-repeat: no-repeat;
-  height: 56px;
-  width: 180px;
-  background-size: 160px;
-  background-size: 180px !important;
+.page-title {
+  margin-bottom: 50px;
+}
+.page-title p {
+  font-size: 60px;
+  color: #b9d0b1;
+  text-align: right;
+  line-height: 0.8;
 }
 .form-control {
-  border: 1px solid #dcdfe6;
+  background-color: #efefef;
+  border-color: #efefef;
   font-size: inherit;
+  width: 400px;
+}
+.actions input {
+  background-color: #b9d0b1;
+  color: #fff;
+  border-color: #b9d0b1;
+  border-radius: 25px;
+  margin-top: 15px;
 }
 .devise-link {
   text-align: center;
   margin: 16px 0;
+}
+.devise-link a {
+  color: #b9d0b1;
 }
 #wrapper {
   display: flex;

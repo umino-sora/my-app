@@ -6,14 +6,18 @@
 <div class="main">
     <div class="card devise-card">
         <div class="form-wrap">
-            <div class="form-group text-center">
-                <h2 class="logo-img mx-auto"></h2>
-                <p class="text-secondary">友達の写真や動画をチェックしよう</p>
+            <div class="page-title">
+                <p>sign</p>
+                <p>up</p>
             </div>
         <form method="POST" action="{{ route('register') }}">
             {{ csrf_field() }}
             <div class="form-group">
-                <input class="form-control" placeholder="メールアドレス" autocomplete="email" type="email" name="email" value="{{ old('email') }}" required>
+                <label>
+                    メールアドレス
+                    <br>
+                    <input class="form-control" autocomplete="email" type="email" name="email" value="{{ old('email') }}" required>
+                </label>
             </div>
             @if ($errors->has('email'))
                 <span class="help-block">
@@ -21,11 +25,19 @@
                 </span>
             @endif
             <div class="form-group">
-                <input class="form-control" placeholder="ユーザーネーム" type="text" name="name" value="{{ old('name') }}" required autofocus>
+                <label>
+                    ユーザーネーム
+                    <br>
+                    <input class="form-control" type="text" name="name" value="{{ old('name') }}" required autofocus>
+                </label>
             </div>
     
             <div class="form-group">
-                <input class="form-control" placeholder="パスワード" autocomplete="off" type="password" name="password" required>
+                <label>
+                    パスワード
+                    <br>
+                    <input class="form-control" autocomplete="off" type="password" name="password" required>
+                </label>
             </div>
             @if ($errors->has('password'))
                 <span class="help-block">
@@ -33,11 +45,15 @@
                 </span>
             @endif
             <div class="form-group">
-                <input class="form-control" placeholder="パスワードの確認" autocomplete="off" type="password" name="password_confirmation" required>
+                <label>
+                    パスワード確認
+                    <br>
+                    <input class="form-control" autocomplete="off" type="password" name="password_confirmation" required>
+                </label>
             </div>
     
             <div class="actions">
-                <input type="submit" name="commit" value="登録する" class="btn btn-primary w-100">
+                <input type="submit" name="commit" value="sign up" class="btn btn-primary w-100">
             </div>
         </form>
         <br>
