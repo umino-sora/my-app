@@ -60,7 +60,7 @@
     
         <p class="devise-link">
             アカウントをお持ちですか？
-            <a href="/users/sign_in">サインインする</a>
+            <a href="{{ route('login') }}">サインインする</a>
         </p>
         </div>
     </div>

@@ -6,21 +6,30 @@
 <div class="main">
     <div class="card devise-card">
         <div class="form-wrap">
-            <div class="form-group text-center">
-                <h2 class="logo-img mx-auto"></h2>
+            <div class="page-title">
+                <p>sign</p>
+                <p>in</p>
             </div>
             <form class="new_user" id="new_user" action="{{ route('login') }}" accept-charset="UTF-8" method="post">
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <input id="email" type="email" class="form-control" name="email"  placeholder="メールアドレス" value="{{ old('email') }}" required autofocus>
+                    <label>
+                        メールアドレス
+                        <br>
+                        <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+                    </label>
                 </div>
         
                 <div class="form-group">
-                    <input id="password" type="password" class="form-control" name="password" placeholder="パスワード" required>
+                    <label>
+                        パスワード
+                        <br>
+                        <input id="password" type="password" class="form-control" name="password" required>
+                    </label>
                 </div>
         
                 <div class="actions">
-                    <input type="submit" name="commit" value="サインインする" class="btn btn-primary w-100">
+                    <input type="submit" name="commit" value="sign in" class="btn btn-primary w-100">
                 </div>
             </form>
     
