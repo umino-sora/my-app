@@ -15,8 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/mypage', 'UsersController@index');
+// topのroute記述（まだ作ってないよ）
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/mypage/edit', 'UsersController@edit');
+Route::post('/mypage/update', 'UsersController@update');
+Route::get('/mypage/{user_id}', 'UsersController@show');
