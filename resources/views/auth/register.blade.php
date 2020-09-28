@@ -13,11 +13,8 @@
         <form method="POST" action="{{ route('register') }}">
             {{ csrf_field() }}
             <div class="form-group">
-                <label>
-                    メールアドレス
-                    <br>
-                    <input class="form-control" autocomplete="email" type="email" name="email" value="{{ old('email') }}" required>
-                </label>
+                <label>メールアドレス</label>
+                <input class="form-control" autocomplete="email" type="email" name="email" value="{{ old('email') }}" required>
             </div>
             @if ($errors->has('email'))
                 <span class="help-block">
@@ -25,19 +22,12 @@
                 </span>
             @endif
             <div class="form-group">
-                <label>
-                    ユーザーネーム
-                    <br>
-                    <input class="form-control" type="text" name="name" value="{{ old('name') }}" required autofocus>
-                </label>
+                <label>ユーザーネーム</label>
+                <input class="form-control" type="text" name="name" value="{{ old('name') }}" required>
             </div>
-    
             <div class="form-group">
-                <label>
-                    パスワード
-                    <br>
-                    <input class="form-control" autocomplete="off" type="password" name="password" required>
-                </label>
+                <label>パスワード</label>
+                <input class="form-control" autocomplete="off" type="password" name="password" required>
             </div>
             @if ($errors->has('password'))
                 <span class="help-block">
@@ -45,11 +35,8 @@
                 </span>
             @endif
             <div class="form-group">
-                <label>
-                    パスワード確認
-                    <br>
-                    <input class="form-control" autocomplete="off" type="password" name="password_confirmation" required>
-                </label>
+                <label>パスワード確認</label>
+                <input class="form-control" autocomplete="off" type="password" name="password_confirmation" required>
             </div>
     
             <div class="actions">

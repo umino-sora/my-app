@@ -13,19 +13,13 @@
             <form class="new_user" id="new_user" action="{{ route('login') }}" accept-charset="UTF-8" method="post">
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <label>
-                        メールアドレス
-                        <br>
-                        <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
-                    </label>
+                    <label>メールアドレス</label>
+                    <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
                 </div>
         
                 <div class="form-group">
-                    <label>
-                        パスワード
-                        <br>
-                        <input id="password" type="password" class="form-control" name="password" required>
-                    </label>
+                    <label>パスワード</label>
+                    <input id="password" type="password" class="form-control" name="password" required>
                 </div>
         
                 <div class="actions">
