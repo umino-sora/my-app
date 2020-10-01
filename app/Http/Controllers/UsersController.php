@@ -14,10 +14,9 @@ class UsersController extends Controller
         $this->middleware('auth');
     }
     
-    public function show($user_id)
+    public function show()
     {
-        $user = User::where('id', $user_id)
-            ->firstOrFail();
+        $user = Auth::user();
             
         return view('user/mypage', ['user' => $user]);
     }
