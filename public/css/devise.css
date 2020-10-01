@@ -28,6 +28,9 @@
 .form-group input {
   margin-bottom: 25px;
 }
+.form-group textarea {
+  margin-bottom: 25px;
+}
 .form-control {
   background-color: #efefef;
   border-color: #efefef;

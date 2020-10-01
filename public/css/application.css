@@ -61,6 +61,9 @@ body {
 .form-group input {
   margin-bottom: 25px;
 }
+.form-group textarea {
+  margin-bottom: 25px;
+}
 .form-control {
   background-color: #efefef;
   border-color: #efefef;
@@ -100,12 +103,15 @@ footer {
 .profile-wrap {
   max-width: 400px;
   width: 100%;
-  margin: 50px auto;
+  margin: 100px auto;
 }
 .round-img {
   border-radius: 50%;
   width: 120px;
   height: 120px;
+}
+.introduction-text {
+  margin: 10px 20px;
 }
 .edit-profile-btn {
   margin: 15px 0 0 15px;

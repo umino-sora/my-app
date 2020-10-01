@@ -43,10 +43,11 @@ class UsersController extends Controller
         
         $user = User::find($request->id);
         $user->name = $request->user_name;
-        if ($request->user_profile_image_path !=null) {
-            $request->user_profile_image_path->storeAs('public/user_images', $user->id . '.jpg');
+        if ($request->profile_image_path !=null) {
+            $request->profile_image_path->storeAs('public/user_images', $user->id . '.jpg');
             $user->profile_image_path = $user->id . '.jpg';
         }
+        $user->introduction = $request->introduction;
         $user->password = bcrypt($request->user_password);
         $user->save();
 

@@ -15,13 +15,13 @@
                 <input type="hidden" name="id" value="{{ $user->id }}" />
                 {{csrf_field()}} 
                 <div class="form-group">
-                    <label for="user_profile_image_path"></label><br>
+                    <label for="profile_image_path"></label><br>
                         @if ($user->profile_image_path)
                             <p>
                                 <img class="round-img" src="{{ asset('storage/user_images/' . $user->profile_image_path) }}" alt="avatar" />
                             </p>
                         @endif
-                    <input type="file" name="user_profile_image_path"  value="{{ old('user_profile_photo',$user->id) }}" accept="image/jpeg,image/gif,image/png" />
+                    <input type="file" name="profile_image_path"  value="{{ old('profile_image_path',$user->id) }}" accept="image/jpeg,image/gif,image/png" />
                 </div>
 
                 <div class="form-group">
@@ -30,8 +30,8 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="user_introduction">プロフィール</label>
-                    <textarea class="form-control" value="{{ old('user_introduction',$user->introduction) }}" name="user_introduction"></textarea>
+                    <label for="introduction">プロフィール</label>
+                    <textarea class="form-control" name="introduction">{{ old('introduction',$user->introduction) }}</textarea>
                 </div>
 
                 <div class="form-group">
@@ -41,7 +41,7 @@
 
                 <div class="form-group">
                     <label for="user_password">パスワード</label>
-                    <input class="form-control" type="password" value="{{ old('user_password',$user->password) }}" name="user_password" />
+                    <input class="form-control" type="password" name="user_password" />
                 </div>
 
                 <div class="form-group">
