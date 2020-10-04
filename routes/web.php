@@ -21,6 +21,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+// プロフィール編集
 Route::get('/mypage/edit', 'UsersController@edit');
 Route::post('/mypage/update', 'UsersController@update');
+// マイページ
 Route::get('/mypage/{user_id}', 'UsersController@show');
+// 投稿ページ
+Route::get('/posts/new', 'PostController@new')->name('new');
+Route::post('/posts', 'PostController@show');
