@@ -19,6 +19,10 @@
 .navbar-nav > li:first-child {
   margin-left: 0;
 }
+.navbar-nav > li .commonNavIcon {
+  height: 53px;
+  width: 53px;
+}
 .navbar-nav > li .btn-primary {
   background-color: #fff;
   color: #b9d0b1;
