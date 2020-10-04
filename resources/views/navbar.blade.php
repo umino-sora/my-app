@@ -5,7 +5,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-md-auto align-items-center">
                     <li>
-                        <a href="/mypage/{{ Auth::user()->id }}"><img class="nav-link commonNavIcon" src="/images/mypage-icon.png"></a>
+                        <a href="/mypage/{id}"><img class="nav-link commonNavIcon" src="/images/mypage-icon.png"></a>
                     </li>
                     <li>
                         <a class="btn btn-primary" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">logout</a>
