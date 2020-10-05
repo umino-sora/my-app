@@ -9,11 +9,11 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    public function new()
+    public function edit()
     {
         $prefectures = Prefecture::all();
-        // new.blade.php 表示
-        return view('post/new', ['prefectures' => $prefectures]);
+        // edit.blade.php 表示
+        return view('post/edit', ['prefectures' => $prefectures]);
     }
     
     public function show(Request $request)
@@ -38,8 +38,10 @@ class PostController extends Controller
         return redirect('/posts/' .$request->id);
     }
     
-    /* public function new()
+    public function new()
     {
-        return view('post/new');
-    } */
+        $post = Post::limit(1);
+        // new.blade.php 表示
+        return view('post/new', ['' => $post]);
+    }
 }
