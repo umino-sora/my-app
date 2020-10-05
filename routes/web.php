@@ -29,3 +29,5 @@ Route::get('/mypage/{user_id}', 'UsersController@show');
 // 投稿ページ
 Route::get('/posts/new', 'PostController@new')->name('new');
 Route::post('/posts', 'PostController@show');
+// 新着投稿ページ
+//Route::get('/posts/{post_id}', 'PostController@new');

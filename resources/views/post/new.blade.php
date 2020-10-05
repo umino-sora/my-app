@@ -17,6 +17,7 @@
                     <div class="mb-3">
                         <input type="file" name="post_image_path" accept="image/jpeg,image/gif,image/png" />
                     </div>
+                    
                     <div class="form-group">
                         <label for="date">日付</label>
                         <input class="form-control" id="date_picker" type="text" name="date" />
@@ -33,6 +34,14 @@
                         </script>
                     </div>
                     <!-- 都道府県のプルダウン入れたい -->
+                    <div class="form-group">
+                        <label for="date">都道府県</label>
+                        <select class="form-control" name="prefecture_id">
+                            @foreach ($prefectures as $prefecture)
+                                <option value="{{ $prefecture->id }}">{{ $prefecture->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
                     
                     <div class="form-group">
                         <label for="introduction">キャプション</label>

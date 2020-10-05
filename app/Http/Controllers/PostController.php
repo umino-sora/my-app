@@ -11,8 +11,9 @@ class PostController extends Controller
 {
     public function new()
     {
+        $prefectures = Prefecture::all();
         // new.blade.php 表示
-        return view('post/new');
+        return view('post/new', ['prefectures' => $prefectures]);
     }
     
     public function show(Request $request)
@@ -35,6 +36,10 @@ class PostController extends Controller
         $post->save();
         
         return redirect('/posts/' .$request->id);
-        
     }
+    
+    /* public function new()
+    {
+        return view('post/new');
+    } */
 }
