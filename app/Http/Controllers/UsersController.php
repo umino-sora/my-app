@@ -50,7 +50,7 @@ class UsersController extends Controller
         $user->password = bcrypt($request->user_password);
         $user->save();
 
-        return redirect('/mypage/' .$request->id);
+        return redirect('/mypage/{user_id}');
     }
     
 }

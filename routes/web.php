@@ -28,6 +28,6 @@ Route::post('/mypage/update', 'UsersController@update');
 Route::get('/mypage/{user_id}', 'UsersController@show');
 // 投稿ページ
 Route::get('/posts/edit', 'PostController@edit')->name('edit');
-Route::post('/posts', 'PostController@show');
+Route::post('/posts', 'PostController@store');
 // 新着投稿ページ
-Route::get('/posts/{post_id}', 'PostController@new');
+Route::get('/posts/{post_id}', 'PostController@view');
