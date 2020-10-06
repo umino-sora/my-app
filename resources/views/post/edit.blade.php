@@ -15,7 +15,7 @@
                 <form class="upload-images p-0 border-0" id="new_post" enctype="multipart/form-data" action="{{ url('posts')}}" accept-charset="UTF-8" method="POST">
                 {{csrf_field()}} 
                     <div class="mb-3">
-                        <input type="file" name="post_image_path" accept="image/jpeg,image/gif,image/png" />
+                        <input id="post_image" type="file" name="post_image_path" accept="image/jpeg,image/gif,image/png" />
                     </div>
                     
                     <div class="form-group">
@@ -54,4 +54,14 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+  $('#post_image').bind('change', function() {
+    var size_in_megabytes = this.files[0].size/1024/1024;
+    if (size_in_megabytes > 1) {
+      alert('ファイルサイズの最大は1MBまでです。違う画像を選んでください。');
+    }
+  });
+</script>
+
 @endsection
