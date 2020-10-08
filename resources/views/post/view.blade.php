@@ -19,7 +19,8 @@
                 </a>
             </div>
 
-            <img src="/storage/post_images/{{ $post->post_image_path }}.jpg" class="card-img-top" />
+            <img src="/storage/post_images/{{ $post->post_image_path }}" class="card-img-top">
+            <p>{{ $post->caption }}</p>
         </div>
     </div>
 </div>

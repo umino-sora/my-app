@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use App\Post;
 use App\Prefecture;
 use Auth;
@@ -26,7 +27,7 @@ class PostController extends Controller
         }
         // Postモデル定義
         $post = new Post;
-        $path = $request->file('post_image_path')->storeAs('public/post_images', $request->timestamps . Auth::user()->id . '.jpg');
+        $path = $request->file('post_image_path')->storeAs('public/post_images', date('Y-m-d-H_i_s') . Auth::user()->id . '.jpg');
         $post->post_image_path = $path;
         $post->caption = $request->caption;
         $post->date = $request->date;
@@ -39,12 +40,19 @@ class PostController extends Controller
         return redirect("/posts/$post->id");
     }
     
-    public function view($post_id)
+    /* public function view($post_id)
     {
         $post = Post::where('id', $post_id)->get();
         \Log::info(print_r($post->all(),true));
         \Log::info($post_id);
         // view.blade.php 表示
+        return view('post/view', ['post' => $post]);
+    } */
+    
+    public function view()
+    {
+        $post = Post::where('user_id', Auth::user()->id)->latest()->first();
+        
         return view('post/view', ['post' => $post]);
     }
 }
