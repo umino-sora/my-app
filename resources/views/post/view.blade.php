@@ -19,7 +19,11 @@
                 </a>
             </div>
 
-            <img src="/storage/post_images/{{ $post->post_image_path }}" class="card-img-top">
+            <img src="{{ asset('storage/post_images/' . $post->post_image_path) }}" class="card-img-top">
+            <li>
+                <ul>{{ $post->date }}</ul>
+           
+            </li>
             <p>{{ $post->caption }}</p>
         </div>
     </div>

@@ -52,7 +52,8 @@ class PostController extends Controller
     public function view()
     {
         $post = Post::where('user_id', Auth::user()->id)->latest()->first();
+        $prefecture = Prefecture::where('code', $post->prefecture_id)->get();
         
-        return view('post/view', ['post' => $post]);
+        return view('post/view', ['post' => $post], ['prefecture' => $prefecture]);
     }
 }
