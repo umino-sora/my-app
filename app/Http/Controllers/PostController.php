@@ -40,15 +40,6 @@ class PostController extends Controller
         return redirect("/posts/$post->id");
     }
     
-    /* public function view($post_id)
-    {
-        $post = Post::where('id', $post_id)->get();
-        \Log::info(print_r($post->all(),true));
-        \Log::info($post_id);
-        // view.blade.php 表示
-        return view('post/view', ['post' => $post]);
-    } */
-    
     public function view()
     {
         $post = Post::where('user_id', Auth::user()->id)->latest()->first();
