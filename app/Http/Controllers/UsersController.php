@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Post;
 use Auth;
 use Validator;
 use Illuminate\Http\Request;
@@ -17,8 +18,9 @@ class UsersController extends Controller
     public function show()
     {
         $user = Auth::user();
+        $posts = Post::where('user_id', $user->id)->limit(12)->orderBy('created_at', 'desc')->get();
             
-        return view('user/mypage', ['user' => $user]);
+        return view('user/mypage', ['user' => $user], ['posts' => $posts]);
     }
     
     public function edit()

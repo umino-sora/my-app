@@ -14,17 +14,16 @@
                         <img class="post-profile-icon round-img" src="{{ asset('/images/blank_profile.png') }}"/>
                     @endif
                 </a>
-                <a class="black-color no-text-decoration" title="{{ $post->user->name }}" href="/mypage/{{ $post->user->id }}">
+                <a class="name-color no-text-decoration" title="{{ $post->user->name }}" href="/mypage/{{ $post->user->id }}">
                     <strong>{{ $post->user->name }}</strong>
                 </a>
             </div>
 
             <img src="{{ asset('storage/post_images/' . $post->post_image_path) }}" class="card-img-top">
-            <li>
-                <ul>{{ $post->date }}</ul>
-           
-            </li>
-            <p>{{ $post->caption }}</p>
+            <div class="posts_text">
+                <p>{{ $post->date }}</p>
+                <p>{{ $post->caption }}</p>
+            </div>
         </div>
     </div>
 </div>

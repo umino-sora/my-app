@@ -5,6 +5,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-md-auto align-items-center">
                     <li>
+                        <a href="/posts/edit"><img class="nav-link postNavIcon" src="/images/post-icon.png"></a>
+                    </li>
+                    <li>
                         <a href="/mypage/{id}"><img class="nav-link commonNavIcon" src="/images/mypage-icon.png"></a>
                     </li>
                     <li>

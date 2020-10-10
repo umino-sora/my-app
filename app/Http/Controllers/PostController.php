@@ -28,7 +28,7 @@ class PostController extends Controller
         // Postモデル定義
         $post = new Post;
         $path = $request->file('post_image_path')->storeAs('public/post_images', date('Y-m-d-H_i_s') . Auth::user()->id . '.jpg');
-        $post->post_image_path = $path;
+        $post->post_image_path = date('Y-m-d-H_i_s') . Auth::user()->id . '.jpg';
         $post->caption = $request->caption;
         $post->date = $request->date;
         $post->prefecture_id = $request->prefecture_id;

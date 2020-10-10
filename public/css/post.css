@@ -16,3 +16,43 @@
   border-color: #b9d0b1;
   font-size: 14px;
 }
+.post-profile-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.card-wrap {
+  margin: 40px 0px;
+}
+.no-text-decoration:hover {
+  text-decoration: none;
+}
+.name-color {
+  color: #898989;
+}
+.parts {
+  margin: 12px 0;
+}
+.love {
+  background-image: url("/images/parts5.png");
+  background-repeat: no-repeat;
+  height: 36px;
+  width: 36px;
+  background-size: 36px !important;
+}
+.comment {
+  margin-left: 8px;
+  background-image: url("/images/parts6.png");
+  background-repeat: no-repeat;
+  height: 36px;
+  width: 36px;
+  background-size: 40px !important;
+}
+.post-sub-text {
+  text-decoration: none;
+  color: #262626;
+}
+.posts_text {
+  margin-left: 30px;
+}

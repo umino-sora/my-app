@@ -14,7 +14,7 @@
     }
     &-nav {
         & > li {
-            margin-left: 20px;
+            margin-left: 5px;
             &:first-child {
                 margin-left: 0;
             }
@@ -22,6 +22,12 @@
             .commonNavIcon {
                 height: 53px;
                 width: 53px;
+                margin-right: 5px;
+            }
+            
+            .postNavIcon {
+                height: 47px;
+                width: 47px;
             }
         
             .btn-primary {

@@ -14,7 +14,7 @@
   background-image: url("/images/logo.png");
 }
 .navbar-nav > li {
-  margin-left: 20px;
+  margin-left: 5px;
 }
 .navbar-nav > li:first-child {
   margin-left: 0;
@@ -22,6 +22,11 @@
 .navbar-nav > li .commonNavIcon {
   height: 53px;
   width: 53px;
+  margin-right: 5px;
+}
+.navbar-nav > li .postNavIcon {
+  height: 47px;
+  width: 47px;
 }
 .navbar-nav > li .btn-primary {
   background-color: #fff;
