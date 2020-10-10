@@ -18,7 +18,7 @@ class UsersController extends Controller
     public function show()
     {
         $user = Auth::user();
-        $posts = Post::where('user_id', $user->id)->limit(12)->orderBy('created_at', 'desc')->get();
+        $posts = Post::where('user_id', $user->id)->latest()->get();
             
         return view('user/mypage', ['user' => $user], ['posts' => $posts]);
     }
