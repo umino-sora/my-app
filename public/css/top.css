@@ -1,0 +1,11 @@
+.main-introduction {
+  margin: 0 auto;
+}
+.main-letter {
+  text-align: center;
+  color: #b9d0b1;
+  font-size: 17px;
+  line-height: 1.2;
+  font-family: "Hannari", serif;
+  margin-top: 55px;
+}

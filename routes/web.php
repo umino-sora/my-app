@@ -21,6 +21,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+// topページ
+Route::get('/', 'TopController@top')->name('top');
 // プロフィール編集
 Route::get('/mypage/edit', 'UsersController@edit');
 Route::post('/mypage/update', 'UsersController@update');

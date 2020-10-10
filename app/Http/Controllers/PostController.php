@@ -47,4 +47,5 @@ class PostController extends Controller
         
         return view('post/view', ['post' => $post], ['prefecture' => $prefecture]);
     }
+    
 }

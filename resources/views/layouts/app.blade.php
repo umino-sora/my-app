@@ -15,6 +15,8 @@
         <link href="{{ secure_asset('css/application.css') }}" rel="stylesheet">
         <!-- flatpickr -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.4.3/flatpickr.css">
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
     </head>
     
     <body>
