@@ -40,11 +40,14 @@ class PostController extends Controller
         return redirect("/posts/$post->id");
     }
     
-    public function view()
+    public function view($post_id)
     {
-        $post = Post::where('user_id', Auth::user()->id)->latest()->first();
-        $prefecture = Prefecture::where('code', $post->prefecture_id)->get();
-        
+        $post = Post::where('id', $post_id)->first();
+        $prefecture = Prefecture::where('code', $post->prefecture_id)->first();
+    
+        \Log::info(print_r($post->all(),true));
+        \Log::info(print_r($post->user_id,true));
+        \Log::info(print_r($post->id,true));
         return view('post/view', ['post' => $post], ['prefecture' => $prefecture]);
     }
     

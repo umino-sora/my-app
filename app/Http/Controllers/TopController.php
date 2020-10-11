@@ -14,5 +14,4 @@ class TopController extends Controller
         $posts = Post::limit(12)->orderBy('created_at', 'desc')->get();
         return view('top', ['posts' => $posts]);
     }
-    
 }
