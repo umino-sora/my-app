@@ -33,3 +33,9 @@ Route::get('/posts/edit', 'PostController@edit')->name('edit');
 Route::post('/posts', 'PostController@store');
 // 新着投稿ページ
 Route::get('/posts/{post_id}', 'PostController@view');
+// 投稿削除
+Route::get('postsdelete/{post_id}', 'PostController@destroy');
+// いいね
+Route::get('/posts/{post_id}/likes', 'LikesController@store');
+// いいね取消
+Route::get('/likes/{like_id}', 'LikesController@destroy');

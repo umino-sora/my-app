@@ -11,6 +11,11 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function edit()
     {
         $prefectures = Prefecture::all();
@@ -20,7 +25,7 @@ class PostController extends Controller
     
     public function store(Request $request)
     {
-        $validator = Validator::make($request->all() , ['caption' => 'required|max:255', 'post_image_path' => 'required', 'prefecture_id' => 'required']);
+        $validator = Validator::make($request->all() , ['caption' => 'required|max:255', 'post_image_path' => 'required', 'date' => 'required', 'prefecture_id' => 'required']);
         if ($validator->fails())
         {
             return redirect()->back()->withErrors($validator->errors())->withInput();
@@ -49,6 +54,13 @@ class PostController extends Controller
         \Log::info(print_r($post->user_id,true));
         \Log::info(print_r($post->id,true));
         return view('post/view', ['post' => $post], ['prefecture' => $prefecture]);
+    }
+    
+    public function destroy($post_id)
+    {
+        $post = Post::find($post_id);
+        $post->delete();
+        return redirect('/mypage/{user_id}');
     }
     
 }
