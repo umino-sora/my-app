@@ -63,4 +63,9 @@ class PostController extends Controller
         return redirect('/mypage/{user_id}');
     }
     
+    public function likedBy($user)
+    {
+        return Like::where('user_id', $user->id)->where('post_id', $this->id);
+    }
+    
 }

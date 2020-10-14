@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.4.3/flatpickr.css">
         <!-- font -->
         <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+        <!-- font awesome -->
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     </head>
     
     <body>

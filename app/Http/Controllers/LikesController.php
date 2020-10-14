@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use App\Like;
 use App\Post;
+use App\Prefecture;
 use Auth;
 use Validator;
 
@@ -24,14 +26,14 @@ class LikesController extends Controller
         $like->user_id = Auth::user()->id;
         $like->save();
 
-        return redirect('/mypage/{user_id}');
+        return redirect("/posts/$like->post_id");
     }
     
     public function destroy(Request $request)
     {
         $like = Like::find($request->like_id);
         $like->delete();
-        return redirect('/mypage/{user_id}');
+        return redirect("/posts/$like->post_id");
     }
     
 }
