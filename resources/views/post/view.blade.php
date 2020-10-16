@@ -22,22 +22,20 @@
                 
                 <img src="{{ asset('storage/post_images/' . $post->post_image_path) }}" class="card-img-top">
                 
-                @if ($post->user->id == Auth::user()->id)
-          	        <a class="ml-auto mx-0 my-auto" rel="nofollow" href="/postsdelete/{{ $post->id }}">
-                        <img class="delete-post-icon" src="/images/trash.png">
-                  	</a>
-                @endif
-                
                 <div class="card-body">
-                   
-                        <div id="ml-auto mx-0 my-auto">
-                            @if ($post->likedBy(Auth::user())->count() > 0)
-                                <a class="loved hide-text" data-remote="true" rel="nofollow" data-method="DELETE" href="/likes/{{ $post->likedBy(Auth::user())->firstOrFail()->id }}"><img class="delete-post-icon" src="/images/like2.png"></a>
-                            @else
-                                <a class="love hide-text" data-remote="true" rel="nofollow" data-method="POST" href="/posts/{{ $post->id }}/likes"><img class="delete-post-icon" src="/images/like1.png"></a>
-                            @endif
-                        </div>
-
+                    <div id="ml-auto mx-0 my-auto">
+                        @if ($post->likedBy(Auth::user())->count() > 0)
+                            <a class="loved hide-text" data-remote="true" rel="nofollow" data-method="DELETE" href="/likes/{{ $post->likedBy(Auth::user())->firstOrFail()->id }}"><img class="delete-post-icon" src="/images/like2.png"></a>
+                        @else
+                            <a class="love hide-text" data-remote="true" rel="nofollow" data-method="POST" href="/posts/{{ $post->id }}/likes"><img class="delete-post-icon" src="/images/like1.png"></a>
+                        @endif
+                        
+                        @if ($post->user->id == Auth::user()->id)
+                  	        <a class="delete-image" rel="nofollow" href="/postsdelete/{{ $post->id }}">
+                                <img class="delete-post-icon" src="/images/trash.png">
+                          	</a>
+                        @endif
+                    </div>
                 </div>
                 
                 <div class="posts_text">

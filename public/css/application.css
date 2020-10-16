@@ -44,7 +44,7 @@ body {
   max-width: 960px;
   margin: 0 auto;
   width: 90%;
-  padding: 30px 75px 30px;
+  padding: 0 75px 0;
   display: block;
   flex: 1;
   flex-basis: auto;
@@ -56,10 +56,10 @@ body {
 .form-wrap {
   max-width: 400px;
   width: 100%;
-  margin: 50px auto;
+  margin: 40px auto;
 }
 .page-title {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .page-title p {
   font-size: 60px;
@@ -152,9 +152,6 @@ footer {
 .card {
   margin-top: 50px;
 }
-.card-body {
-  padding-bottom: 10px;
-}
 #date_picker {
   background-color: #efefef;
   border-color: #efefef;
@@ -181,9 +178,6 @@ footer {
 .name-color {
   color: #898989;
 }
-.parts {
-  margin: 12px 0;
-}
 .post-sub-text {
   text-decoration: none;
   color: #262626;
@@ -191,10 +185,12 @@ footer {
 .posts_text {
   margin-left: 30px;
 }
+.delete-image {
+  float: right;
+}
 .delete-post-icon {
-  width: 25px;
-  height: 25px;
-  margin: 5px;
+  width: 27px;
+  height: 27px;
 }
 .main-introduction {
   margin: 0 auto;

@@ -6,9 +6,6 @@
 .card {
   margin-top: 50px;
 }
-.card-body {
-  padding-bottom: 10px;
-}
 #date_picker {
   background-color: #efefef;
   border-color: #efefef;
@@ -35,9 +32,6 @@
 .name-color {
   color: #898989;
 }
-.parts {
-  margin: 12px 0;
-}
 .post-sub-text {
   text-decoration: none;
   color: #262626;
@@ -45,8 +39,10 @@
 .posts_text {
   margin-left: 30px;
 }
+.delete-image {
+  float: right;
+}
 .delete-post-icon {
-  width: 25px;
-  height: 25px;
-  margin: 5px;
+  width: 27px;
+  height: 27px;
 }
