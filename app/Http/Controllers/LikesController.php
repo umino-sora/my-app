@@ -18,6 +18,14 @@ class LikesController extends Controller
         $this->middleware('auth');
     }
     
+    public function index()
+    {
+        $user = Auth::user();
+        $likes = Like::where('user_id', $user->id)->latest()->get();
+        // likes.blade.php 表示
+        return view('user/likes', ['likes' => $likes]);
+    }
+    
     public function store(Request $request)
     {
         // Likeモデル作成

@@ -27,6 +27,10 @@
     </div>
     <div class="row">
         @if ($user->id == Auth::user()->id)
+            <a class="btn btn-outline-dark common-btn edit-profile-btn" href="/likes/index"><i class="fas fa-heart"></i> 一覧</a>
+        @endif
+        
+        @if ($user->id == Auth::user()->id)
             <a class="btn btn-outline-dark common-btn edit-profile-btn" href="/mypage/edit">プロフィールを編集</a>
         @endif
 

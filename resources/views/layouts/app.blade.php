@@ -19,6 +19,9 @@
         <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
         <!-- font awesome -->
         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     </head>
     
     <body>

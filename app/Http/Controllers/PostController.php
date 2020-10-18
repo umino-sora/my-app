@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Post;
 use App\Prefecture;
+use App\Like;
 use Auth;
 use Validator;
 use Illuminate\Http\Request;

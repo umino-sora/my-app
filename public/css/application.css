@@ -203,3 +203,44 @@ footer {
   font-family: "Hannari", serif;
   margin-top: 55px;
 }
+.search-area {
+  text-align: center;
+}
+.serch-icon {
+  margin: 40px auto 10px;
+  color: #b9d0b1;
+  font-size: 20px;
+}
+.modal {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal-window {
+  z-index: 2;
+  width: 500px;
+  margin: 20% auto;
+  padding: 20px;
+  background-color: white;
+}
+.cross-icon {
+  text-align: right;
+  color: #b9d0b1;
+  font-size: 15px;
+}
+/*チェックボックス、ラジオボタンのブロックの指定*/.box-pref {
+  margin: 5px 0 0 40px;
+  color: #b9d0b1;
+}
+.checkbox-pref {
+  width: 3em;
+}
+.my-favorites {
+  margin-bottom: 70px;
+}
