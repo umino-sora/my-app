@@ -35,17 +35,18 @@ class TopController extends Controller
         ]);
     }
     
-    public function serch(Request $request)
+    public function search(Request $request)
     {
-        $cond_title = $request->cond_title;
+        $search_words = $request->search_words;
         $serect_prefectures = $request->serect_prefectures;
-            if ($cond_title != '') {
-                $posts = Post::where('', $cond_title)->get();
+            if ($search_words == '') {
+                $posts = Post::where('prefecture_id', $serect_prefectures)->get();
+            } elseif ($serect_prefectures == '') {
+                $posts = Post::where('caption', $search_words)->get();
             } else {
-                // それ以外はすべてのニュースを取得する
-                $posts = News::all();
+                $posts = Post::where('prefecture_id', $serect_prefectures)->where('caption', $search_words)->get();
             }
-        return view('admin.news.index', ['posts' => $posts, 'cond_title' => $cond_title]);
-
+            
+        return view('search', ['posts' => $posts, 'serect_prefectures' => $serect_prefectures]);
     }
 }

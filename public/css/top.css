@@ -12,7 +12,7 @@
 .search-area {
   text-align: center;
 }
-.serch-icon {
+.search-icon {
   margin: 40px auto 10px;
   color: #b9d0b1;
   font-size: 20px;
@@ -40,7 +40,7 @@
   color: #b9d0b1;
   font-size: 15px;
 }
-/*チェックボックス、ラジオボタンのブロックの指定*/.box-pref {
+.box-pref {
   margin: 5px 0 0 40px;
   color: #b9d0b1;
 }

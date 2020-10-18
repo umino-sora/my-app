@@ -42,4 +42,4 @@ Route::get('/posts/{post_id}/likes', 'LikesController@store');
 // いいね取消
 Route::get('/likes/{like_id}', 'LikesController@destroy');
 // 検索
-Route::get('/serch', 'TopController@serch');
+Route::get('/search', 'TopController@search');
