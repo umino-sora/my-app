@@ -28,6 +28,8 @@ Route::get('/mypage/edit', 'UsersController@edit');
 Route::post('/mypage/update', 'UsersController@update');
 // マイページ
 Route::get('/mypage/{user_id}', 'UsersController@show');
+// ユーザーページ
+Route::get('/userpage/{user_id}', 'UsersController@userpage');
 // 投稿ページ
 Route::get('/posts/edit', 'PostController@edit')->name('edit');
 Route::post('/posts', 'PostController@store');

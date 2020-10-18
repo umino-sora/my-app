@@ -55,55 +55,55 @@
                         <p>北海道地方</p>
                         <input type="checkbox" id="prefecture1" name="serect_prefectures" class="box-pref">
                         <label for="prefecture1" class="checkbox-pref">
-                            <option value="{{ $prefecture1->id }}">{{ $prefecture1->name }}</option>
+                            {{ $prefecture1->name }}
                         </label>
                         <p>東北地方</p>
                         @foreach ($prefectures2 as $prefecture2)
-                            <input type="checkbox" id="prefecture2" name="serect_prefectures" class="box-pref">
+                            <input type="checkbox" id="prefecture2" name="serect_prefectures" class="box-pref" value="{{ $prefecture2->id }}">
                             <label for="prefecture2" class="checkbox-pref">
-                                <option value="{{ $prefecture2->id }}">{{ $prefecture2->name }}</option>
+                                {{ $prefecture2->name }}
                             </label>
                         @endforeach
                         <p>関東地方</p>
                         @foreach ($prefectures3 as $prefecture3)
-                            <input type="checkbox" id="prefecture3" name="serect_prefectures" class="box-pref">
+                            <input type="checkbox" id="prefecture3" name="serect_prefectures" class="box-pref" value="{{ $prefecture3->id }}">
                             <label for="prefecture3" class="checkbox-pref">
-                                <option value="{{ $prefecture3->id }}">{{ $prefecture3->name }}</option>
+                                {{ $prefecture3->name }}
                             </label>
                         @endforeach
                         <p>中部地方</p>
                         @foreach ($prefectures4 as $prefecture4)
-                            <input type="checkbox" id="prefecture4" name="serect_prefectures" class="box-pref">
+                            <input type="checkbox" id="prefecture4" name="serect_prefectures" class="box-pref" value="{{ $prefecture4->id }}">
                             <label for="prefecture4" class="checkbox-pref">
-                                <option value="{{ $prefecture4->id }}">{{ $prefecture4->name }}</option>
+                                {{ $prefecture4->name }}
                             </label>
                         @endforeach
                         <p>近畿地方</p>
                         @foreach ($prefectures5 as $prefecture5)
-                            <input type="checkbox" id="prefecture5" name="serect_prefectures" class="box-pref">
+                            <input type="checkbox" id="prefecture5" name="serect_prefectures" class="box-pref" value="{{ $prefecture5->id }}">
                             <label for="prefecture5" class="checkbox-pref">
-                                <option value="{{ $prefecture5->id }}">{{ $prefecture5->name }}</option>
+                                {{ $prefecture5->name }}
                             </label>
                         @endforeach
                         <p>中国地方</p>
                         @foreach ($prefectures6 as $prefecture6)
-                            <input type="checkbox" id="prefecture6" name="serect_prefectures" class="box-pref">
+                            <input type="checkbox" id="prefecture6" name="serect_prefectures" class="box-pref" value="{{ $prefecture6->id }}">
                             <label for="prefecture6" class="checkbox-pref">
-                                <option value="{{ $prefecture6->id }}">{{ $prefecture6->name }}</option>
+                                {{ $prefecture6->name }}
                             </label>
                         @endforeach
                         <p>四国地方</p>
                         @foreach ($prefectures7 as $prefecture7)
-                            <input type="checkbox" id="prefecture7" name="serect_prefectures" class="box-pref">
+                            <input type="checkbox" id="prefecture7" name="serect_prefectures" class="box-pref" value="{{ $prefecture7->id }}">
                             <label for="prefecture7" class="checkbox-pref">
-                                <option value="{{ $prefecture7->id }}">{{ $prefecture7->name }}</option>
+                                {{ $prefecture7->name }}
                             </label>
                         @endforeach
                         <p>九州地方</p>
                         @foreach ($prefectures8 as $prefecture8)
-                            <input type="checkbox" id="prefecture8" name="serect_prefectures" class="box-pref">
+                            <input type="checkbox" id="prefecture8" name="serect_prefectures" class="box-pref" value="{{ $prefecture8->id }}">
                             <label for="prefecture8" class="checkbox-pref">
-                                <option value="{{ $prefecture8->id }}">{{ $prefecture8->name }}</option>
+                                {{ $prefecture8->name }}
                             </label>
                         @endforeach
                     </label>

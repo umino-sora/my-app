@@ -24,6 +24,14 @@ class UsersController extends Controller
         return view('user/mypage', ['user' => $user], ['posts' => $posts]);
     }
     
+    public function userpage($user_id)
+    {
+        $user = User::where('id', $user_id)->first();
+        $posts = Post::where('user_id', $user->id)->latest()->get();
+            
+        return view('user/mypage', ['user' => $user], ['posts' => $posts]);
+    }
+    
     public function edit()
     {
         $user = Auth::user();

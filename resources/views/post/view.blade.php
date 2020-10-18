@@ -8,14 +8,14 @@
         <div class="card-wrap">
             <div class="card">
                 <div class="card-header align-items-center d-flex">
-                    <a class="no-text-decoration" href="/mypage/{{ $post->user->id }}">
+                    <a class="no-text-decoration" href="/userpage/{{ $post->user->id }}">
                         @if ($post->user->profile_image_path)
                             <img class="post-profile-icon round-img" src="{{ asset('storage/user_images/' . $post->user->profile_image_path) }}"/>
                         @else
                             <img class="post-profile-icon round-img" src="{{ asset('/images/blank_profile.png') }}"/>
                         @endif
                     </a>
-                    <a class="name-color no-text-decoration" title="{{ $post->user->name }}" href="/mypage/{{ $post->user_id }}">
+                    <a class="name-color no-text-decoration" title="{{ $post->user->name }}" href="/userpage/{{ $post->user->id }}">
                         <strong>{{ $post->user->name }}</strong>
                     </a>
                 </div>

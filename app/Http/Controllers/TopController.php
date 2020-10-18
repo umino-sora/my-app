@@ -38,13 +38,14 @@ class TopController extends Controller
     public function search(Request $request)
     {
         $search_words = $request->search_words;
+        \Log::info(print_r($search_words, true));
         $serect_prefectures = $request->serect_prefectures;
             if ($search_words == '') {
                 $posts = Post::where('prefecture_id', $serect_prefectures)->get();
             } elseif ($serect_prefectures == '') {
-                $posts = Post::where('caption', $search_words)->get();
+                $posts = Post::where('caption','like', "%$search_words%")->get();
             } else {
-                $posts = Post::where('prefecture_id', $serect_prefectures)->where('caption', $search_words)->get();
+                $posts = Post::where('prefecture_id', $serect_prefectures)->where('caption','like', "%$search_words%")->get();
             }
             
         return view('search', ['posts' => $posts, 'serect_prefectures' => $serect_prefectures]);

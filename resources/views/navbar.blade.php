@@ -10,7 +10,7 @@
                             <a href="/posts/edit"><img class="nav-link postNavIcon" src="/images/post-icon.png"></a>
                         </li>
                         <li>
-                            <a href="/mypage/{id}"><img class="nav-link commonNavIcon" src="/images/mypage-icon.png"></a>
+                            <a href="/mypage/{{ Auth::id() }}"><img class="nav-link commonNavIcon" src="/images/mypage-icon.png"></a>
                         </li>
                         <li>
                             <a class="btn btn-primary" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">logout</a>
