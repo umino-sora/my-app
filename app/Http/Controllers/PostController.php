@@ -71,7 +71,10 @@ class PostController extends Controller
     
     public function prefIndex($prefecture_id)
     {
-        $posts = Post::where('prefecture_id',$prefecture_id)->get();
+        $user = Auth::user();
+        $posts = Post::where('user_id', $user->id)->where('prefecture_id', $prefecture_id)->latest()->get();
+        
+        return view('post/indexpref', ['posts' => $posts]);
     }
     
 }
