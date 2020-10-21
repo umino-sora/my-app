@@ -50,100 +50,10 @@
     
     <div class="japan-map">
         <ul class="jp_map">
+            @foreach ($prefectures as $prefecture)
             <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
-            <li>
-                <a href="#"></a></li>
+                <a href="/indexpref/{{ $prefecture->id }}"></a></li>
+            @endforeach
         </ul>
     </div>
     

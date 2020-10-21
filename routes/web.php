@@ -45,3 +45,6 @@ Route::get('/posts/{post_id}/likes', 'LikesController@store');
 Route::get('/likes/{like_id}', 'LikesController@destroy');
 // 検索
 Route::get('/search', 'TopController@search');
+// 都道府県ごと一覧
+Route::get('/indexpref/{prefecture_id}','PostController@prefIndex');
+

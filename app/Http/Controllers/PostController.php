@@ -69,4 +69,9 @@ class PostController extends Controller
         return Like::where('user_id', $user->id)->where('post_id', $this->id);
     }
     
+    public function prefIndex($prefecture_id)
+    {
+        $posts = Post::where('prefecture_id',$prefecture_id)->get();
+    }
+    
 }
