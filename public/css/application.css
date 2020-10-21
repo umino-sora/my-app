@@ -144,6 +144,334 @@ footer {
   object-fit: cover;
   margin-bottom: 20px;
 }
+/* 都道府県地図エリア */.japan-map {
+  margin-top: 30px;
+}
+ul.jp_map {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul.jp_map a {
+  color: #000;
+  text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px -2px, #fff 0px 2px, #fff 2px 2px, #fff -2px 2px, #fff 2px -2px, #fff -2px -2px, #fff 1px 2px, #fff -1px 2px, #fff 1px -2px, #fff -1px -2px, #fff 2px 1px, #fff -2px 1px, #fff 2px -1px, #fff -2px -1px;
+  text-decoration: none;
+}
+.jp_map li a {
+  box-sizing: border-box;
+  width: calc(50% - 6px);
+  float: left;
+  padding: 7px 0;
+  border-radius: 10px;
+  text-align: center;
+  margin: 3px;
+}
+ul.jp_map {
+  padding: 84% 0 0;
+}
+.jp_map li a {
+  width: 7%;
+  height: 10%;
+  border: solid #fff 2px;
+  box-sizing: border-box;
+  padding: 7px 0;
+  float: none;
+  font-size: 14px;
+  margin: 0;
+}
+.jp_map li a:hover {
+  text-decoration: none;
+}
+.jp_map li:nth-child(1) a {
+  position: absolute;
+  top: 0;
+  left: 85%;
+  width: 15%;
+  background-color: #a3a8d2;
+}
+.jp_map li:nth-child(2) a {
+  position: absolute;
+  top: 11%;
+  left: 85%;
+  width: 14%;
+  height: 5.5%;
+  background-color: #a0b7da;
+}
+.jp_map li:nth-child(3) a {
+  position: absolute;
+  top: 16.5%;
+  left: 92%;
+  background-color: #a0b7da;
+}
+.jp_map li:nth-child(4) a {
+  position: absolute;
+  top: 26.5%;
+  left: 92%;
+  background-color: #a0b7da;
+}
+.jp_map li:nth-child(5) a {
+  position: absolute;
+  top: 16.5%;
+  left: 85%;
+  background-color: #a0b7da;
+}
+.jp_map li:nth-child(6) a {
+  position: absolute;
+  top: 26.5%;
+  left: 85%;
+  background-color: #a0b7da;
+}
+.jp_map li:nth-child(7) a {
+  position: absolute;
+  top: 36.5%;
+  left: 92%;
+  background-color: #a0b7da;
+}
+.jp_map li:nth-child(8) a {
+  position: absolute;
+  top: 46.5%;
+  left: 92%;
+  background-color: #7ebfe4;
+}
+.jp_map li:nth-child(9) a {
+  position: absolute;
+  top: 46.5%;
+  left: 85%;
+  background-color: #7ebfe4;
+}
+.jp_map li:nth-child(10) a {
+  position: absolute;
+  top: 46.5%;
+  left: 78%;
+  background-color: #7ebfe4;
+}
+.jp_map li:nth-child(11) a {
+  position: absolute;
+  top: 56.5%;
+  left: 85%;
+  background-color: #7ebfe4;
+}
+.jp_map li:nth-child(12) a {
+  position: absolute;
+  top: 56.5%;
+  left: 92%;
+  background-color: #7ebfe4;
+}
+.jp_map li:nth-child(13) a {
+  left: 85%;
+  position: absolute;
+  top: 66.5%;
+  background-color: #7ebfe4;
+}
+.jp_map li:nth-child(14) a {
+  left: 78%;
+  position: absolute;
+  top: 66.5%;
+  background-color: #7ebfe4;
+}
+.jp_map li:nth-child(15) a {
+  position: absolute;
+  top: 36.5%;
+  left: 78%;
+  width: 14%;
+  background-color: #a0cda8;
+}
+.jp_map li:nth-child(16) a {
+  position: absolute;
+  top: 36.5%;
+  left: 71%;
+  background-color: #a0cda8;
+}
+.jp_map li:nth-child(17) a {
+  position: absolute;
+  top: 36.5%;
+  left: 64%;
+  background-color: #a0cda8;
+}
+.jp_map li:nth-child(18) a {
+  left: 64%;
+  position: absolute;
+  top: 46.5%;
+  background-color: #a0cda8;
+}
+.jp_map li:nth-child(19) a {
+  position: absolute;
+  top: 56.5%;
+  left: 78%;
+  background-color: #a0cda8;
+}
+.jp_map li:nth-child(20) a {
+  left: 71%;
+  position: absolute;
+  top: 46.5%;
+  height: 20%;
+  background-color: #a0cda8;
+}
+.jp_map li:nth-child(21) a {
+  left: 64%;
+  position: absolute;
+  top: 56.5%;
+  background-color: #a0cda8;
+}
+.jp_map li:nth-child(22) a {
+  left: 71%;
+  position: absolute;
+  top: 66.5%;
+  background-color: #a0cda8;
+}
+.jp_map li:nth-child(23) a {
+  left: 64%;
+  position: absolute;
+  top: 66.5%;
+  background-color: #a0cda8;
+}
+.jp_map li:nth-child(24) a {
+  left: 57%;
+  position: absolute;
+  top: 66.5%;
+  background-color: #f7d98e;
+}
+.jp_map li:nth-child(25) a {
+  left: 57%;
+  position: absolute;
+  top: 46.5%;
+  background-color: #f7d98e;
+}
+.jp_map li:nth-child(26) a {
+  left: 50%;
+  position: absolute;
+  top: 46.5%;
+  background-color: #f7d98e;
+}
+.jp_map li:nth-child(27) a {
+  left: 50%;
+  position: absolute;
+  top: 56.5%;
+  background-color: #f7d98e;
+}
+.jp_map li:nth-child(28) a {
+  left: 43%;
+  position: absolute;
+  top: 46.5%;
+  height: 20%;
+  background-color: #f7d98e;
+}
+.jp_map li:nth-child(29) a {
+  left: 57%;
+  position: absolute;
+  top: 56.5%;
+  background-color: #f7d98e;
+}
+.jp_map li:nth-child(30) a {
+  left: 50%;
+  position: absolute;
+  top: 66.5%;
+  background-color: #f7d98e;
+}
+.jp_map li:nth-child(31) a {
+  left: 36%;
+  position: absolute;
+  top: 46.5%;
+  background-color: #f0b56c;
+}
+.jp_map li:nth-child(32) a {
+  left: 29%;
+  position: absolute;
+  top: 46.5%;
+  background-color: #f0b56c;
+}
+.jp_map li:nth-child(33) a {
+  left: 36%;
+  position: absolute;
+  top: 56.5%;
+  background-color: #f0b56c;
+}
+.jp_map li:nth-child(34) a {
+  left: 29%;
+  position: absolute;
+  top: 56.5%;
+  background-color: #f0b56c;
+}
+.jp_map li:nth-child(35) a {
+  left: 22%;
+  position: absolute;
+  top: 51.5%;
+  background-color: #f0b56c;
+}
+.jp_map li:nth-child(36) a {
+  left: 36%;
+  position: absolute;
+  top: 78.5%;
+  background-color: #f2c3a9;
+}
+.jp_map li:nth-child(37) a {
+  left: 36%;
+  position: absolute;
+  top: 68.5%;
+  background-color: #f2c3a9;
+}
+.jp_map li:nth-child(38) a {
+  left: 29%;
+  position: absolute;
+  top: 68.5%;
+  background-color: #f2c3a9;
+}
+.jp_map li:nth-child(39) a {
+  left: 29%;
+  position: absolute;
+  top: 78.5%;
+  background-color: #f2c3a9;
+}
+.jp_map li:nth-child(40) a {
+  left: 14%;
+  position: absolute;
+  top: 46.5%;
+  background-color: #eaa4bd;
+}
+.jp_map li:nth-child(41) a {
+  left: 7%;
+  position: absolute;
+  top: 46.5%;
+  background-color: #eaa4bd;
+}
+.jp_map li:nth-child(42) a {
+  left: 0;
+  position: absolute;
+  top: 46.5%;
+  background-color: #eaa4bd;
+}
+.jp_map li:nth-child(43) a {
+  left: 7%;
+  position: absolute;
+  top: 56.5%;
+  background-color: #eaa4bd;
+}
+.jp_map li:nth-child(44) a {
+  left: 14%;
+  position: absolute;
+  top: 56.5%;
+  background-color: #eaa4bd;
+}
+.jp_map li:nth-child(45) a {
+  left: 14%;
+  position: absolute;
+  top: 66.5%;
+  background-color: #eaa4bd;
+}
+.jp_map li:nth-child(46) a {
+  left: 7%;
+  position: absolute;
+  top: 66.5%;
+  background-color: #eaa4bd;
+}
+.jp_map li:nth-child(47) a {
+  left: 0;
+  position: absolute;
+  top: 76.5%;
+  background-color: #f5d2de;
+}
 .post-view-wrap {
   max-width: 800px;
   width: 100%;
@@ -240,6 +568,11 @@ footer {
 }
 .checkbox-pref {
   width: 3em;
+}
+.pref-layout {
+  border-top: 1px solid #b9d0b1;
+  padding-top: 13px;
+  max-width: 420px;
 }
 .my-favorites {
   margin-bottom: 70px;

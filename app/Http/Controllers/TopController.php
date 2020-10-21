@@ -48,6 +48,6 @@ class TopController extends Controller
                 $posts = Post::where('prefecture_id', $serect_prefectures)->where('caption','like', "%$search_words%")->get();
             }
             
-        return view('search', ['posts' => $posts, 'serect_prefectures' => $serect_prefectures]);
+        return view('search', ['posts' => $posts, 'serect_prefectures' => $serect_prefectures, 'search_words' => $search_words]);
     }
 }

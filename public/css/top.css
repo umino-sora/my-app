@@ -47,3 +47,8 @@
 .checkbox-pref {
   width: 3em;
 }
+.pref-layout {
+  border-top: 1px solid #b9d0b1;
+  padding-top: 13px;
+  max-width: 420px;
+}

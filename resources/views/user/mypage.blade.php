@@ -47,6 +47,106 @@
             </div>
         </div>
     </div>
+    
+    <div class="japan-map">
+        <ul class="jp_map">
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+            <li>
+                <a href="#"></a></li>
+        </ul>
+    </div>
+    
     <div class="container-fluid">
         <div class="row posts-img">
             @foreach ($posts as $post) 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use App\Post;
+use App\Prefecture;
 use Auth;
 use Validator;
 use Illuminate\Http\Request;
@@ -20,8 +21,9 @@ class UsersController extends Controller
     {
         $user = Auth::user();
         $posts = Post::where('user_id', $user->id)->latest()->get();
+        $prefectures = Prefecture::all();
             
-        return view('user/mypage', ['user' => $user], ['posts' => $posts]);
+        return view('user/mypage', ['user' => $user, 'posts' => $posts , 'prefectures' => $prefectures]);
     }
     
     public function userpage($user_id)
