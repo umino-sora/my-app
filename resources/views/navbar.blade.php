@@ -1,5 +1,5 @@
 @section('navbar')
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand navbar-light">
         @if (Auth::check())
             <!-- ログインしている時 -->
             <div class="container">
