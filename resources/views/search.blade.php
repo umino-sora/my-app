@@ -6,7 +6,6 @@
 <div class="profile-wrap">
     <div class="page-title my-favorites">
         <p>search</p>
-        <p>results</p>
     </div>
     <div class="container-fluid">
         <div class="row posts-img">

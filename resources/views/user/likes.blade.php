@@ -5,8 +5,7 @@
 @section('content')
 <div class="profile-wrap">
     <div class="page-title my-favorites">
-        <p>my</p>
-        <p>favorites</p>
+        <p>likes</p>
     </div>
     <div class="container-fluid">
         <div class="row posts-img">

@@ -48,14 +48,17 @@
         </div>
     </div>
     
-    <div class="japan-map">
-        <ul class="jp_map">
-            @foreach ($prefectures as $prefecture)
-            <li>
-                <a href="/indexpref/{{ $prefecture->id }}"></a></li>
-            @endforeach
-        </ul>
-    </div>
+    @if ($user->id == Auth::user()->id)
+        <div class="japan-map">
+            <ul class="jp_map">
+                @foreach ($prefectures as $prefecture)
+                <li>
+                    <a href="/indexpref/{{ $prefecture->id }}"></a></li>
+                @endforeach
+        
+            </ul>
+        </div>
+    @endif
     
     <div class="container-fluid">
         <div class="row posts-img">
