@@ -69,9 +69,12 @@ class PostController extends Controller
         return Like::where('user_id', $user->id)->where('post_id', $this->id);
     }
     
-    public function prefIndex($prefecture_id)
+    public function prefIndex($user_id, $prefecture_id)
     {
-        $user = Auth::user();
+        \Log::info(print_r('user_id:' .$user_id,true));
+        \Log::info(print_r($prefecture_id,true));
+        
+        $user = User::where('id', $user_id)->first();
         $posts = Post::where('user_id', $user->id)->where('prefecture_id', $prefecture_id)->latest()->get();
         
         return view('post/indexpref', ['posts' => $posts]);

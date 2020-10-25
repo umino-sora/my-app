@@ -10,7 +10,7 @@
     <div class="container-fluid">
         <div class="row posts-img">
             @foreach ($posts as $post) 
-                <div class="col-md-4">
+                <div class="col-4">
                     <a href="/posts/{{ $post->id }}">
                         <img class="photo-trim" src="/storage/post_images/{{ $post->post_image_path }}" />
                     </a>

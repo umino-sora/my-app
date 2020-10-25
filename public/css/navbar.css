@@ -35,3 +35,8 @@
   border-color: #fff;
   font-size: 14px;
 }
+@media screen and (max-width: 768px) {
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+}

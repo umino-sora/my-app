@@ -30,8 +30,9 @@ class UsersController extends Controller
     {
         $user = User::where('id', $user_id)->first();
         $posts = Post::where('user_id', $user->id)->latest()->get();
+        $prefectures = Prefecture::all();
             
-        return view('user/mypage', ['user' => $user], ['posts' => $posts]);
+        return view('user/mypage', ['user' => $user, 'posts' => $posts , 'prefectures' => $prefectures]);
     }
     
     public function edit()

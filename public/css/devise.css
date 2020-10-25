@@ -35,7 +35,7 @@
   background-color: #efefef;
   border-color: #efefef;
   font-size: inherit;
-  width: 400px;
+  width: 100%;
 }
 .actions input {
   background-color: #b9d0b1;
@@ -61,9 +61,6 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .main {
-    padding: 75px 0;
-  }
-  .devise-card {
-    background-color: #fafafa;
+    padding: 0;
   }
 }

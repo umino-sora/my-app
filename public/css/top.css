@@ -1,6 +1,9 @@
 .main-introduction {
   margin: 0 auto;
 }
+.main-img {
+  width: 100%;
+}
 .main-letter {
   text-align: center;
   color: #b9d0b1;
@@ -51,4 +54,16 @@
   border-top: 1px solid #b9d0b1;
   padding-top: 13px;
   max-width: 420px;
+}
+@media screen and (max-width: 768px) {
+  .main-letter {
+    font-size: 14px;
+  }
+  .modal-window {
+    z-index: 2;
+    width: 90%;
+    margin: 20% auto;
+    padding: 20px;
+    background-color: white;
+  }
 }
