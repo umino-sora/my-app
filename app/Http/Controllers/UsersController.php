@@ -8,6 +8,7 @@ use App\Prefecture;
 use Auth;
 use Validator;
 use Illuminate\Http\Request;
+use Storage;
 
 class UsersController extends Controller
 {
@@ -57,8 +58,10 @@ class UsersController extends Controller
         $user = User::find($request->id);
         $user->name = $request->user_name;
         if ($request->profile_image_path !=null) {
-            $request->profile_image_path->storeAs('public/user_images', $user->id . '.jpg');
-            $user->profile_image_path = $user->id . '.jpg';
+            // $request->profile_image_path->storeAs('public/user_images', $user->id . '.jpg');
+            // $user->profile_image_path = $user->id . '.jpg';
+            $path = Storage::disk('s3')->putFile('/mypage/edit',$from['profile_image_path'], 'public');
+            $user->profile_image_path = Storage::disk('s3')->url($path);
         }
         $user->introduction = $request->introduction;
         $user->password = bcrypt($request->user_password);
