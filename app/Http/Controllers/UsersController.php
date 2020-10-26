@@ -60,7 +60,7 @@ class UsersController extends Controller
         if ($request->profile_image_path !=null) {
             // $request->profile_image_path->storeAs('public/user_images', $user->id . '.jpg');
             // $user->profile_image_path = $user->id . '.jpg';
-            $path = Storage::disk('s3')->putFile('/mypage/edit',$from['profile_image_path'], 'public');
+            $path = Storage::disk('s3')->putFile('/',$from['profile_image_path'], 'public');
             $user->profile_image_path = Storage::disk('s3')->url($path);
         }
         $user->introduction = $request->introduction;
