@@ -8,7 +8,7 @@
     <div class="main-introduction">
         <img class="main-img" src="/images/main.png">
         <div class="main-letter">
-            <p>旅先や日常でのひとこまを記憶するために…</p>
+            <p>旅先や日常でのひとこまを記憶するために...</p>
             <br>
             <p>ひっそりと佇む喫茶店、木漏れ日の綺麗な公園。</p>
             <p>昨日までは知らなかった新しい景色。</p>
