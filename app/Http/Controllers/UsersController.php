@@ -58,10 +58,10 @@ class UsersController extends Controller
         $user = User::find($request->id);
         $user->name = $request->user_name;
         if ($request->profile_image_path !=null) {
-            // $request->profile_image_path->storeAs('public/user_images', $user->id . '.jpg');
-            // $user->profile_image_path = $user->id . '.jpg';
-            $path = Storage::disk('s3')->putFile('/',$form['profile_image_path'], 'public');
-            $user->profile_image_path = Storage::disk('s3')->url($path);
+            $request->profile_image_path->storeAs('public/user_images', $user->id . '.jpg');
+            $user->profile_image_path = $user->id . '.jpg';
+            // $path = Storage::disk('s3')->putFile('/',$form['profile_image_path'], 'public');
+            // $user->profile_image_path = Storage::disk('s3')->url($path);
         }
         $user->introduction = $request->introduction;
         $user->password = bcrypt($request->user_password);
