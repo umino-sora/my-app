@@ -8,7 +8,7 @@
         <div class="col-md-4 text-center">
             @if ($user->profile_image_path)
                 <p>
-                    <img class="round-img" src="{{ asset('storage/user_images/' . $user->profile_image_path) }}" alt="avatar" />
+                    <img class="round-img" src="{{ $user->profile_image_path }}" alt="avatar" />
                 </p>
                 @else
                     <img class="round-img" src="{{ asset('/images/blank_profile.png') }}"/>
@@ -63,7 +63,7 @@
             @foreach ($posts as $post) 
             <div class="col-4">
                 <a href="/posts/{{ $post->id }}">
-                  <img class="photo-trim" src="/storage/post_images/{{ $post->post_image_path }}" />
+                  <img class="photo-trim" src="{{ $post->post_image_path }}" />
                 </a>
             </div>
             @endforeach

@@ -8,6 +8,7 @@ use App\Prefecture;
 use App\Like;
 use Auth;
 use Validator;
+use Storage;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -33,8 +34,10 @@ class PostController extends Controller
         }
         // Postモデル定義
         $post = new Post;
-        $path = $request->file('post_image_path')->storeAs('public/post_images', date('Y-m-d-H_i_s') . Auth::user()->id . '.jpg');
-        $post->post_image_path = date('Y-m-d-H_i_s') . Auth::user()->id . '.jpg';
+        $path = Storage::disk('s3')->putFile('/',$form['post_image_path'], 'public');
+        $post->post_image_path = Storage::disk('s3')->url($path);
+        // $path = $request->file('post_image_path')->storeAs('public/post_images', date('Y-m-d-H_i_s') . Auth::user()->id . '.jpg');
+        // $post->post_image_path = date('Y-m-d-H_i_s') . Auth::user()->id . '.jpg';
         $post->caption = $request->caption;
         $post->date = $request->date;
         $post->prefecture_id = $request->prefecture_id;
